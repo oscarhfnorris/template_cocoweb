@@ -10,7 +10,7 @@
     <!-- header imported from header.php -->
     <?php include("src/page_assets/header_template.php"); ?>
     
-
+    <!-- Main Code -->
     <h1>MAIN</h1>
 
 
