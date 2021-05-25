@@ -8,8 +8,13 @@
 </head>
 <body>
     <!-- header imported from header.php -->
-    <?php include("src/page_assets/header.php"); ?>
+    <?php include("src/page_assets/header_template.php"); ?>
     
 
+    <h1>MAIN</h1>
+
+
+    <!-- footer imported from header.php -->
+    <?php include("src/page_assets/footer_template.php"); ?>
 </body>
 </html>
