@@ -50,7 +50,7 @@ header {
     box-shadow: inset 1px 1px 10px rgba(0,0,0,0.2);
 
     height: 150vh;
-    background: url("src/img/parallax.jpg");
+    background: url("/src/img/parallax.jpg");
     background-size: cover;
     position: relative;
     
@@ -81,9 +81,9 @@ header {
       }
 
     .mask {
-      mask:url("src/img/svg-mask.svg");
+      mask:url("/src/img/svg-mask.svg");
       mask-size: cover;
-      -webkit-mask:url("src/img/svg-mask.svg");
+      -webkit-mask:url("/src/img/svg-mask.svg");
       -webkit-mask-size:cover;
       width:100%;
       height:100%;
@@ -131,7 +131,7 @@ main {
   .contenttwo {
     width: 100%;
     height: 100vh;
-    background: url("src/img/parallax.jpg");
+    background: url("/src/img/parallax.jpg");
     background-size: cover;
     position: relative;
     background: salmon;
