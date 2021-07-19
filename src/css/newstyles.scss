@@ -1,0 +1,148 @@
+
+/* -------------------------------------<Imports>------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+
+/* -------------------------------------<COLOR VARIABLES>------------------------------------- */
+$brand-primary: #FFA600;
+$brand-primary-light: #FFAF19;
+$brand-primary-dark: #B37400 ;
+$brand-secondary: #0070FF;
+$brand-accent: #004FB3;
+
+$text-light: #EDF0F1;
+$text-dark: rgb(128, 130, 131);
+
+// Remember! 60-30-10 rule. 60% Primary, 30% Secondary, and 10% accent
+
+//NEWWWWWWWWWWWWWWWWWWWW
+$header-background: rgb(181,219,232);
+
+/* -------------------------------------<COMMON CLASSES>-------------------------------------< */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.flexParent {
+  display: flex;
+  flex-wrap: wrap;    
+  flex-direction: row; //flexParent is horizontal by default
+
+  .vertical {
+      flex-direction: column !important;
+      justify-content: space-between;   
+  }
+}
+
+.flexChild {
+  flex-grow: 1;       
+}
+
+
+body {
+  width: 100%;
+  margin: 0;
+  background: #E8E5E2;
+}
+/* -------------------------------------<HEADER>-------------------------------------< */  
+header {
+  .parallax {
+    box-shadow: inset 1px 1px 10px rgba(0,0,0,0.2);
+
+    height: 150vh;
+    background: url("src/img/parallax.jpg");
+    background-size: cover;
+    position: relative;
+    
+    .headline {
+      font-family: "Montserrat", sans-serif;
+      font-size: 150px;
+      color: white;
+      position: fixed;
+      top:20vh;
+      width:100%;
+      text-align: center;
+      text-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+      cursor: default;
+    }
+
+      .subtitle {
+        font-family: "Montserrat", sans-serif;
+        font-size: 28px;
+        font-weight: 100;
+        color: white;
+        position: fixed;
+        top:20vh;
+        margin-top: 180px;
+        width:100%;
+        text-align: center;
+        text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+        cursor: default;
+      }
+
+    .mask {
+      mask:url("src/img/svg-mask.svg");
+      mask-size: cover;
+      -webkit-mask:url("src/img/svg-mask.svg");
+      -webkit-mask-size:cover;
+      width:100%;
+      height:100%;
+    }
+
+    .downArrow {
+      font-size: 60px;
+      position: fixed;
+      margin-top: 230px;
+      top:20vh;
+      margin-left: 47.5%;
+      margin-right: 47.5%;
+      width: 5%;
+      text-align: center;
+      text-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+      color: white;
+    }
+  }
+}
+
+/* -------------------------------------<MAIN CONTENT>-------------------------------------< */  
+main {
+  //--------------------------------<INDEX PAGE>
+  .content {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    color: #1e1e1e;
+   
+
+    h1 {
+      text-align: center;
+    }
+    .coreValues {
+      align-items: stretch;
+  
+      h1 {
+       text-align: center;
+      }
+    }
+  }
+
+  
+
+  .contenttwo {
+    width: 100%;
+    height: 100vh;
+    background: url("src/img/parallax.jpg");
+    background-size: cover;
+    position: relative;
+    background: salmon;
+  }
+
+}
+
+/* -------------------------------------<FOOTER>-------------------------------------< */  
+footer {
+  background-color: $header-background;
+}
+
+
+
