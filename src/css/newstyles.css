@@ -1,0 +1,136 @@
+/* -------------------------------------<Imports>------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+/* -------------------------------------<COLOR VARIABLES>------------------------------------- */
+/* -------------------------------------<COMMON CLASSES>-------------------------------------< */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.flexParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flexParent .vertical {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flexChild {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background: #E8E5E2;
+}
+
+/* -------------------------------------<HEADER>-------------------------------------< */
+header .parallax {
+  -webkit-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.2);
+  height: 150vh;
+  background: url("src/img/parallax.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+header .parallax .headline {
+  font-family: "Montserrat", sans-serif;
+  font-size: 150px;
+  color: white;
+  position: fixed;
+  top: 20vh;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+
+header .parallax .subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  color: white;
+  position: fixed;
+  top: 20vh;
+  margin-top: 180px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+}
+
+header .parallax .mask {
+  mask: url("src/img/svg-mask.svg");
+  mask-size: cover;
+  -webkit-mask: url("src/img/svg-mask.svg");
+  -webkit-mask-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+header .parallax .downArrow {
+  font-size: 60px;
+  position: fixed;
+  margin-top: 230px;
+  top: 20vh;
+  margin-left: 47.5%;
+  margin-right: 47.5%;
+  width: 5%;
+  text-align: center;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+/* -------------------------------------<MAIN CONTENT>-------------------------------------< */
+main .content {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  color: #1e1e1e;
+}
+
+main .content h1 {
+  text-align: center;
+}
+
+main .content .coreValues {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+main .content .coreValues h1 {
+  text-align: center;
+}
+
+main .contenttwo {
+  width: 100%;
+  height: 100vh;
+  background: url("src/img/parallax.jpg");
+  background-size: cover;
+  position: relative;
+  background: salmon;
+}
+
+/* -------------------------------------<FOOTER>-------------------------------------< */
+footer {
+  background-color: #b5dbe8;
+}
+/*# sourceMappingURL=newstyles.css.map */

@@ -1,0 +1,144 @@
+/* -------------------------------------<Imports>------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+/* -------------------------------------<COLOR VARIABLES>------------------------------------- */
+/* -------------------------------------<COMMON CLASSES>------------------------------------- */
+.flexParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flexParent #vertical {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flexChild {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* -------------------------------------<HEADER>------------------------------------- */
+header {
+  background-color: #FFA600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10%;
+}
+
+header li, header a, header button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #EDF0F1;
+  text-decoration: none;
+}
+
+header .navLinks {
+  list-style: none;
+}
+
+header .navLinks li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+header .navLinks li a {
+  -webkit-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+}
+
+header .navLinks li a:hover {
+  -webkit-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+  color: #0070FF;
+}
+
+header button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background: none;
+  border: 1;
+  border-color: #EDF0F1;
+  border-collapse: none;
+  border-style: solid;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+}
+
+header button:hover {
+  -webkit-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+  background-color: #EDF0F1;
+  color: #0070FF;
+}
+
+header .logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+/* -------------------------------------<MAIN>------------------------------------- */
+main .mainText {
+  padding: 20px;
+}
+
+main .keyValues {
+  width: 25%;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+main .keyValues .logos {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* -------------------------------------<FOOTER>------------------------------------- */
+footer {
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: #ffa600;
+  color: white;
+}
+
+footer #red {
+  background-color: #0070FF;
+}
+
+footer #blue {
+  background-color: #004FB3;
+}
+/*# sourceMappingURL=styles.css.map */
