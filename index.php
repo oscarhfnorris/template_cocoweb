@@ -69,22 +69,7 @@
     </main>
 
     <footer>
-      <div class="flexParent">
-        <div class="flexChild flexParent vertical" style="flex-grow: 2;">
-          <div class="flexChild flexParent">
-            <div class="flexChild">
-              1
-            </div>
-            <div class="flexChild">
-                1
-            </div>
-          </div>
-          <div class="flexChild">2</div>
-        </div>
-        <div class="flexChild" style="flex-grow: 1">
-          hello
-        </div>
-      </div>
+    <?php include("src/page_assets/footer_template.php"); ?>
     </footer>
   </body>
 
