@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include("src/page_assets/global_variables"); ?>
+<?php include("src/page_assets/global_variables.php"); ?>
 
 <head>
     <meta charset="UTF-8">
